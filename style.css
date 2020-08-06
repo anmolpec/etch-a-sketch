@@ -1,0 +1,42 @@
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: rgba(255, 255, 0, 0.253);
+    display: grid;
+    grid-template:1fr 1fr 1fr/1fr 1fr 1fr;
+    grid-template-areas: ". form1 ." ". table ." ". reset .";
+}
+.table{
+    grid-area: table;
+    width: 400px;
+    height:400px;
+    background-color: rgba(255, 0, 0, 0.473);
+    display:grid;
+}
+.tableElement{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+/*.tableElement:hover{
+    background-color: black;
+}*/
+.tableElementHover{
+    background-color: black;
+}
+#reset{
+    grid-area: reset;
+    max-width: 400px;
+}
+
+form{
+    grid-area: form1;
+    padding-top: 20%;
+}
